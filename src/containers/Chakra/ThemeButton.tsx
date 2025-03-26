@@ -2,13 +2,9 @@ import { Icon, Switch } from '@chakra-ui/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { FC, useContext, useId } from 'react';
 import { ThemeContext } from 'theme/ThemeProvider';
+import { TypeTheme } from './types';
 
 const ThemeButton:FC = () => {
-  interface ChangeFunctions {
-    changeTheme: () => void;
-  }
-  type TypeTheme = Pick<ChangeFunctions, 'changeTheme'>;
-
   const [theme, setTheme] = useContext(ThemeContext);
 
   const changeTheme: TypeTheme['changeTheme'] = () => {
