@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+$colors: (
+  body-light: #ededed,
+  body-dark: #393939,
+);
+
+@mixin navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@mixin select {
+  cursor: pointer;
+  border: none;
+  outline-style: none;
+}
+
+body {
+  text-align: center;
+  background-color: map-get($colors, body-light);
+  color: map-get($colors, body-dark);
+
+  .errorPage {
+    a {
+      padding: 6px;
+      border-radius: 20px;
+      color: map-get($colors, body-dark) !important;
+      background: map-get($colors, body-light) !important;
+    }
+  }
+
+  select {
+    color: map-get($colors, body-dark);
+    background: map-get($colors, body-light);
+  }
+
+  a {
+    text-decoration: none;
+    color: map-get($colors, body-dark);
+  }
+}
+
+body.dark {
+  background-color: map-get($colors, body-dark);
+  color: map-get($colors, body-light);
+
+  select {
+    color: map-get($colors, body-light);
+    background: map-get($colors, body-dark);
+  }
+
+  a {
+    color: map-get($colors, body-light);
+  }
+}
+
+.row {
+  margin-top: 100px;
+}
+
+select {
+  @include select;
+}
+
+.navbar {
+  @include navbar;
+
+  &__links {
+    a {
+      padding: 0 10px;
+    }
+  }
+}

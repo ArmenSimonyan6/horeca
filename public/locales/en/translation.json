@@ -1,0 +1,12 @@
+{
+  "home": {
+    "title": "Text in English",
+    "subTitle": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque veritatis in, magnam doloribus repellendus omnis ex asperiores assumenda ab consectetur quis voluptatum odio atque adipisci vero, commodi at, laborum similique!"
+  },
+  "about": {
+    "title": "About Page"
+  },
+  "history": {
+    "title": "History Page"
+  }
+}
