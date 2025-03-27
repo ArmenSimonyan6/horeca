@@ -5,7 +5,7 @@ import { ThemeContext } from 'theme/ThemeProvider';
 import styles from './PageNotFound.module.scss';
 
 const PageNotFound: FC = () => {
-  const [theme, setTheme] = useContext(ThemeContext);
+  const [theme] = useContext(ThemeContext);
 
   return (
     <div className="row">

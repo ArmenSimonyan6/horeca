@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Layout from './Layout';
+import Layout from '../components/templates/Layout';
 import { routes } from './routesArray';
 
 const RouterProvider: FC = () => {
